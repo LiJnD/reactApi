@@ -41,12 +41,20 @@ text-overflow: clip;
 
 .button {
     text-align: center;
+    background-color: bisque;
     margin: auto;
     display: flex;
     display: grid;
-    border: 2px solid black ;
+    padding: 10px 24px;
+    border-radius: 12px;
     box-shadow: 0 8px 16px 0 black;
 
+}
+
+.button:hover {
+    box-shadow: 0 7px 14px blue;
+    background-color: black;
+    color: white;
 }
 
 .body {
@@ -58,4 +66,5 @@ text-overflow: clip;
     0px 4px 1px rgba(0,0,0,0.5),
     4px 4px 5px rgba(0,0,0,0.7),
     0px 0px 7px rgba(0,0,0,0.4);;
+    letter-spacing: 5px;
 }

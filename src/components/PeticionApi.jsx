@@ -30,6 +30,7 @@ const PeticionApi = () => {
                                     </div>
                                     <div className='card--title'>{character.id}-{character.name}</div>
                                     <div className='card--title'>{character.species}</div>
+                                    <div className='card--title'>{character.gender}</div>
                                 </div>
                             </div>
                         </div>
