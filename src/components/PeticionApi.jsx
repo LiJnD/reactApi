@@ -18,16 +18,15 @@ const PeticionApi = () => {
     return (
         <div>
             <h1>PETICION AL API DE FINAL SPACE</h1>
-            <button onClick={obtenerPersonaje}>Traer personaje</button>
+            <button className='button' onClick={obtenerPersonaje}>Traer personaje</button>
             {
-
                 personaje.map((character) => (
-                    <div className='row'>
+                    <div className='body'>
                         <div className='colum'>
                             <div className='rootStyle'>
                                 <div className="cardStyle" key={character.id}>
                                     <div className="card--image">
-                                        <img src={character.img_url} alt={character.name} />{" "}
+                                        <img src={character.img_url} alt={character.name} key={character.id} />{" "}
                                     </div>
                                     <div className="card--title">{character.name}</div>
                                 </div>
