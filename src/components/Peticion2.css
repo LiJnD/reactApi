@@ -1,5 +1,5 @@
 .cardStyle {
-    box-shadow: "0 8px 16px 0 rgba(3, 5, 0, 0.3)";
+    box-shadow: 0 8px 16px 0 purple;
     padding: 12px;
     margin-bottom: 10px;
     text-align: center;
@@ -8,20 +8,29 @@
     transition: 0.4s;
     margin-top: 20px;
     margin-left: 140px;
+    min-width: 300px;
+    max-width: 300px;
+    max-height: 500px;
+    min-height: 400px;
+}
 
+.card--title {
+    text-align: center;
+hyphens: auto;
+text-overflow: clip;
 }
 
 .rootStyle {
-    margin: 0 auto;
+    margin: 0 auto; 
     width: max-content;
     padding: 0 10px;
-    color: black;
+    color: white;
     font-family: Verdana;
 
 }
 
-.card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+.cardStyle:hover {
+    box-shadow: 0 8px 16px 0 blue;
 }
 
 .colum {
@@ -35,8 +44,18 @@
     margin: auto;
     display: flex;
     display: grid;
+    border: 2px solid black ;
+    box-shadow: 0 8px 16px 0 black;
+
 }
 
 .body {
     background-color: burlywood ;
+}
+
+.textoPrincipal {
+    text-shadow: -1px -1px 1px #aaa,
+    0px 4px 1px rgba(0,0,0,0.5),
+    4px 4px 5px rgba(0,0,0,0.7),
+    0px 0px 7px rgba(0,0,0,0.4);;
 }
